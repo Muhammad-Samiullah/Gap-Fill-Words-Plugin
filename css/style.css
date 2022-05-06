@@ -1,0 +1,145 @@
+.gap-fill-main {
+	border: 5px solid black;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.gap-fill-text:focus {
+	outline: none;
+}
+
+/*DRAG HOLDER
+*/
+.drags-holder {
+    min-height: 50px;
+    background-color: #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+    display: none;
+  }
+  
+  /*DRAGS
+  */
+  .ui-draggable,
+  .wjec-drop {
+    text-align: center;
+  }
+  
+  .drags-holder .ui-draggable {
+    margin: 5px;
+  }
+  
+  .ui-draggable {
+    cursor: move;
+    background: #337ab7;
+    color: #FFF;
+    padding: 2px 5px;
+    font-size: 16px;
+    white-space: nowrap;
+    display: inline-flex;
+  }
+  
+  .ui-draggable-dragging {
+    background: #666;
+    -webkit-box-shadow: 10px 10px 8px -1px rgba(0, 0, 0, .32);
+    -moz-box-shadow: 10px 10px 8px -1px rgba(0, 0, 0, .32);
+    box-shadow: 10px 10px 8px -1px rgba(0, 0, 0, .32);
+  }
+  
+  .incorrect, .drag-incorrect {
+    background-color: #9a2222 !important;
+    color: #FFF !important;
+  }
+  
+  .correct, .drag-correct {
+    background-color: #3da759 !important;
+    color: #FFF !important;
+  }
+  
+  .drag-correct, .drag-incorrect {
+    border: none !important;
+  }
+  
+  .fa-times, .fa-check, .showAnswersBtn {
+    display: none;
+  }
+  
+  .correct-text {
+    background: #3da759;
+    color: #FFF;
+    text-align: center;
+    padding: 2px 5px;
+    font-size: 16px;
+  }
+  
+  /*DROPS
+  */
+  .wjec-drag-and-drop-text .ui-droppable, .correct-text {
+    width: 90px;
+    position: relative;
+    height: 40px;
+    vertical-align: middle;
+  }
+  
+  .correct-text {
+    display: inline-block;
+  }
+  
+  .wjec-drag-and-drop-text .ui-droppable {
+    background: #337ab7;
+    display: none;
+  }
+  
+  .wjec-drag-and-drop-text p, .correct-answers p {
+    line-height: 2em;
+    font-size: 16px;
+  }
+  
+  .drag-and-drop-text p .drop {
+    line-height: 1.8em;
+  }
+  
+  /*FEEDBACK*/
+  .feedback {
+    visibility: hidden;
+    min-height: 3em;
+  }
+  
+  .feedback h4, .user-answers-header, .correct-answers, .resetBtn {
+    display: none;
+  }
+  
+  .modal p {
+    font-size: 16px;
+  }
+  
+  .correct-answers-content {
+    max-height: 150px;
+    overflow-y: scroll;
+  }
+  
+  @media (min-width: 768px){
+    .drags-holder {
+      display: block;
+    }
+    
+    .wjec-drag-and-drop-text, .correct-answers-content {
+      max-height: none !important;
+      overflow: visible;
+      overflow-y: visible !important;
+    }
+    
+    .wjec-drag-and-drop-text .ui-droppable {
+      display: inline-block;
+    }
+    
+    .dropdown {
+      display: none;
+    }
+    
+    .ui-droppable {
+      display: inline-block;
+    }
+  }

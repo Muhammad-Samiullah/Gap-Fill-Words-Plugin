@@ -1,0 +1,24 @@
+<section id="dragAndDrop1" class="container screen dragAndDrop" style="display: none">
+			<div class="wjec-drag-and-drop row">
+				<div class="wjec-drag-and-drop-text col-md-12" style="max-height: 150px; overflow-y: scroll;">
+					
+          </div>
+				</div>
+			</div>
+			<!-- note to dev add distractors here -->
+			<div class="row" style="justify-content: center">
+				<div class="drags-holder col-md-8 col-md-offset-2 ui-droppable"></div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 text-center feedback" style="visibility: visible;">
+					<div class="feedback-incorrect alert alert-danger" style="">You scored <span class="totalCorrect">0</span> out of <span class="dragTotal">6</span>. Move some of the terms around to try to improve your score.</div>
+					<div class="feedback-allcorrect alert alert-success" style="display: none;">Well done. You scored <span class="totalCorrect">0</span> out of <span class="dragTotal">6</span>.</div>
+				</div>
+			</div>
+			<div class="row" id="actions-gap">
+				<div class="col-md-12 text-center">
+					<button class="checkAnswerBtn btn btn btn-primary btn-lg">checkAnswerBtn</button>
+					<button class="resetBtn btn btn btn-primary btn-lg" style="display: inline-block;">resetBtn</button>
+				</div>
+			</div>
+		</section>
